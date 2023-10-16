@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portogresia.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="hem">
+        <nav>
+            <img src="logo.PNG" class="logo" width="110px" height="100px">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#hireme">Hire Me</a></li>
+            </ul>
+        </nav>
+
+    <section class="section mt-3">
+        <div class="container">
+            <div class="row text-center text-md-left" id="home">
+                <div class="col-md-3">
+                    <img src="potoku.JPEG" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h4 class="title">Gresia Angelina Siahaan</h4>
+                    <p class="subtitle">18 Years Old</p>
+                    <p>Holaa friends!!! <br> So this is my official portfolio website to shows all details and work exipirins web development.</p>
+                    <p>A little information about myself, I was born in medan on july 18, 2005. I have 2 older sisters. I have a very cute dog, his name is brunooo, say hello to bruno gayss!</p>          
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <main class="content">
+        <section class="hero">
+        <div class="hero-content" id="education">
+            <h1>EDUCATION</h1>
+            <p>
+                <i class="material-icons">school</i> Methodist Pelita Kasih Mu En Junior High School School
+                <br>
+                <i class="material-icons">school</i> SMAN 3 Medan Senior High School
+                <br>
+                <i class="material-icons">school</i> Information Technolgy at Universitas Sumatera Utara
+            </p>
+        </div>
+        </section>
+    </main>
+
+    <div class="row" id="portfolio">
+        <center><h1 align="center">My Portfolio</h1></center><br>
+        <div class="column"><br>
+          <div class="content">
+            <div class="wrap-img">
+                <br><img src="1.jpg" style="width:100%"><br>
+                <div class="hover-overlay"></div>
+                <div class="hover-sosmed">
+                    <h3 style="font-family:Jura; color:white">Project 1 <br> Perhitungan Aritmetika Sederhana</h3>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column"><br>
+          <div class="content">
+            <div class="wrap-img">
+                <img src="2.jpg" style="width:100%">
+                <div class="hover-overlay"></div>
+                <div class="hover-sosmed">
+                    <h3 style="font-family:Jura; color:white">Project 2 <br> Membuat form menggunakan HTML & CSS</h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="position-relative section">
+        <div class="container text-center" id="hireme">
+            <div class="contact text-left">
+                <div class="form">
+                    <h6 class="subtitle">Hire Me!</h6>
+                    <h6 class="section-title mb-4">Get In Touch</h6>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-infos">
+                    <div class="item">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <h5>GITHUB</h5>
+                            <p>gresiaashn</p>
+                        </div>                          
+                    </div>
+                    <div class="item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div>
+                            <h5>INSTAGRAM</h5>
+                            <p><a href="instagram.com/gresiaashn"></a>@gresiaashn</p>
+                        </div>                          
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="mb-0">
+                            <h5>EMAIL</h5>
+                            <p>gresiasiahaan18@gmail.com</p>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>       
+    </section>
+
+    <button type="button" id="btn" onclick="scrolltoTop()"> <i class="fa fa-arrow-up"> </i></button>
+      </div>
+
+    <script src="https://unpkg.com/scrollreveal"> </script>
+    <script>
+        let button = document.getElementById("btn");
+
+        window.onscroll = function(){
+            if (document.documentElement.scrollTop > 70){
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+
+        function scrolltoTop(){
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+</html>
